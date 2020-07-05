@@ -44,13 +44,12 @@ class Html{
                 <div class="card mb-5">
                     <div class="card-header text-white bg-dark mb-3">
                         <h2>${element.name}</h2>
-                        <h4>${element.role}</h4>
-                        <p>${element.roleIcon}</p>
+                        <h4>${element.role}<span class="pl-2">${element.roleIcon}</span></h4>
                     </div>
                     <div class="card-body font-weight-bold">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${element.id}</li>
-                            <li class="list-group-item">Email: <a href="${element.email}">${element.email}</a>
+                            <li class="list-group-item">Email: <a href="mailto:${element.email}">${element.email}</a>
                             </li>
                             <li class="list-group-item">${element.roleInfoType}:
                                 ${element.roleInfo}
