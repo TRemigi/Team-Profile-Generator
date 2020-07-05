@@ -23,8 +23,7 @@ class Html{
                 </div>
             </div>
             <div class="container">
-                <div class="row pt-5">
-                    <div class="col-12 col-md-6 col-lg-4">`;
+                <div class="row pt-5">`;
 
         this.foot = 
                `</div>
@@ -43,23 +42,25 @@ class Html{
 
     createEmployeeCard = function(element) {
         let html = 
-       `<div class="card">
-            <div class="card-header text-white bg-dark mb-3">
-                <h2>${element.name}</h2>
-                <h4>${element.role}<span>icon</span></h4>
-            </div>
-                <div class="card-body font-weight-bold">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">ID: ${element.id}</li>
-                        <li class="list-group-item">Email: <a href="${element.email}">${element.email}</a>
-                        </li>
-                        <li class="list-group-item">${element.roleInfoType}:
-                            ${element.roleInfo}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>`
+                       `<div class="col-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header text-white bg-dark mb-3">
+                                    <h2>${element.name}</h2>
+                                    <h4>${element.role}<span>icon</span></h4>
+                                </div>
+                                    <div class="card-body font-weight-bold">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">ID: ${element.id}</li>
+                                            <li class="list-group-item">Email: <a href="${element.email}">${element.email}</a>
+                                            </li>
+                                            <li class="list-group-item">${element.roleInfoType}:
+                                                ${element.roleInfo}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
         return html;
     }
 

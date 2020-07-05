@@ -15,6 +15,11 @@ generateHtml = (team) => {
     `${html.body}
     ${html.foot}`;
 
+    fs.writeFile('./dist/newteam.html', html.body, function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
     
 }
 
