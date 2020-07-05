@@ -1,6 +1,6 @@
 const Team = require('./lib/Team');
 
-new Team().startTeam();
+new Team().addEmployee('Manager', 'office number');
 
 
 

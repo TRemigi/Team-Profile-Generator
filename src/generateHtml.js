@@ -5,28 +5,28 @@ generateHtml = (team) => {
     team.forEach(element => {
         element.role = element.getRole();
         if (element.role === 'Manager') {
-            const { name, role, id, email, officeNum } = element;
+            const { name, role, id, email, roleInfo } = element;
             console.log(`
             ${name} is a ${role}.
             Id: ${id}
             Email Address: ${email}
-            Office Number: ${officeNum}`)
+            Office Number: ${roleInfo}`)
         } else if (element.role === 'Engineer') {
-            const { name, role, id, email, github } = element;
+            const { name, role, id, email, roleInfo } = element;
             console.log(`
             ${name} is a ${role}.
             Id: ${id}
             Email Address: ${email}
-            GitHub: ${github}`)
+            GitHub: ${roleInfo}`)
         } else {
-            const { name, role, id, email, school } = element;
+            const { name, role, id, email, roleInfo } = element;
             console.log(`
             ${name} is an ${role}.
             Id: ${id}
             Email Address: ${email}
-            School: ${school}`)
+            School: ${roleInfo}`)
         }
     });
 }
 
-module.exports = buildHtml;
+module.exports = generateHtml;
