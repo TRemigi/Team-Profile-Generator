@@ -18,6 +18,8 @@ generateHtml = (team) => {
     fs.writeFile('./dist/newteam.html', html.body, function (err) {
         if (err) {
             return console.log(err);
+        } else {
+        return console.log('HTML file created! Find it in the ./dist folder!');
         }
     });
     

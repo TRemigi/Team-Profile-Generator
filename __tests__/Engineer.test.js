@@ -6,6 +6,7 @@ test('Creates Engineer object', () => {
     expect(engineer.name).toBe('Guy');
     expect(engineer.id).toEqual(expect.any(Number));
     expect(engineer.email).toEqual(expect.any(String));
-    expect(engineer.github).toEqual(expect.any(String));
+    expect(engineer.roleInfoType).toEqual(expect.any(String));
+    expect(engineer.getRole()).toEqual(expect.any(String));
     
 })
