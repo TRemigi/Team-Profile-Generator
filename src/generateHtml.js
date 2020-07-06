@@ -2,7 +2,6 @@ const Html = require('./Html');
 const fs = require('fs');
 
 generateHtml = (team) => {
-    console.log(team);
     let html = new Html();
 
     team.forEach(element => {
