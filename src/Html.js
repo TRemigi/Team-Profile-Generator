@@ -1,6 +1,6 @@
 class Html{
     constructor() {
-
+        // top portion of html template
         this.body = 
 `<!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@ class Html{
     </div>
     <div class="container">
         <div class="row pt-5">`;
-
+        // bottom potion of html template
         this.foot = 
             `    </div>
     </div>
@@ -38,7 +38,8 @@ class Html{
 
 </html>`;
     }
-
+    // middle portion of html template
+    // populates bootstrap card template with employee object properties
     createEmployeeCard = function(element) {
         let html = `    <div class="col-12 col-md-6 col-lg-4">
                 <div class="card mb-5">
